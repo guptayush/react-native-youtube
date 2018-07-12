@@ -116,6 +116,7 @@ export default class Login extends Component {
           <TextInput
                 placeholder="Enter password"
                 value={this.state.password}
+                secureTextEntry={true}
                 onChangeText={(password) => this.setState({ password,validatePass:true })}
           />
           {!this.state.validatePass && <Text style={{ color: '#F00',marginLeft:5 }}>Enter password</Text>}
